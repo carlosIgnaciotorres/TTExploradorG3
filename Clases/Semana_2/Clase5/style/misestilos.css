@@ -1,0 +1,40 @@
+p{
+    color: darkorchid;
+    background-color:cyan;
+}
+#caja1{
+    border: 2px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: aqua;
+    width: 50%;
+}
+#caja2{
+    background-color: lightgoldenrodyellow;
+    width: 25%;
+    height: 5em;
+    font-size: 50px;
+    vertical-align: bottom;
+    align-self: flex-end;
+}
+#caja3{
+    background-color: crimson;
+}
+ol{
+    font-style: italic;
+    font-weight: bold;
+}
+ul{
+    font-style: oblique;
+    /* font-size: small; */
+}
+.CajaImportante{
+    border: 5px;
+    width: 50%;
+    background-color: antiquewhite;
+}
+.CajaMasImportante{
+    border: 5px;
+    width: 50%;
+    background-color: rgb(250, 143, 3);
+}

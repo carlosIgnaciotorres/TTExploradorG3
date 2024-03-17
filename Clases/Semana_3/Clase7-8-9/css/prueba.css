@@ -1,0 +1,7 @@
+:root{
+    --fondo-defecto:url(../img/images.jpeg)
+}
+body{
+    background-image: var(--fondo-defecto);
+}
+     

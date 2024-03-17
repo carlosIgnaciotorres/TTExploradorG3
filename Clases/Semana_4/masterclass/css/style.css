@@ -1,0 +1,10 @@
+.texto {
+    font-size: medium;
+    font-weight: bold;
+    color: darkslategray;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto {
+    background-color: yellow;
+}
