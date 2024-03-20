@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Comprobar Palíndromo</title>
+        <style>
+            table {
+                margin: auto;
+                width: 300px;
+                text-align: center;
+                border: 1px solid #000000;
+                color: #ff0000;
+                box-shadow: 3px 3px 3px #000000
+            }
+            table tr th {
+                border: 1px solid black;
+            }
+            table tr td {
+                border-bottom: 1px solid #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Comprobar Palíndromo</h1>
+
+        <table cellspacing="0">
+            <tr>
+                <th>Normal</th>
+                <th>Invertida</th>
+            </tr>
+
+            <script>
+                var input = prompt('Introduzca la frase:');
+                var input_limpia = input.toLowerCase().trim().replace(/\s/g,'');
+
+                document.write('<br />La frase introducida es → ' + input + '<br /><br />');
+                document.write('<br />La frase limpia es → ' + input_limpia + '<br /><br />');
+                let long = input_limpia.length;
+                mitad = Math.floor(long/2);
+                let esPalindrome = true;
+
+                for (let i=0;i<mitad;i++){
+                    document.write('<tr><td>' + input_limpia[i] + '</td>' + '<td>' + input_limpia[long-1-i] + '</td></tr>');
+                    if (input_limpia[i] == input_limpia[long-1-i]) {
+                        continue;
+                    } else {
+                        esPalindrome = false;
+                        alert('No coincide');
+                        break;
+                    }
+                }
+                
+            document.write('</table><br><br> <table><tr> <th>Normal</th><th>Invertida</th></tr>')
+
+                for (i=0, j=(long-1); i<long; i++, j--) {
+                    document.write('<tr><td>' + input_limpia[i] + '</td>' + '<td>' + input_limpia[j] + '</td></tr>');
+                    if (input_limpia[i] == input_limpia[j]) {
+                        continue;
+                    } else {
+                        alert('No coincide');
+                        break;
+                    }
+                    
+                }
+                if (esPalindrome){
+                    alert("Muy interesante" +input+" es PALINDROME");
+                }
+            </script>
+        </table>
+    </body>
+</html>
